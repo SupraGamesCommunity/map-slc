@@ -1,5 +1,5 @@
 let mapSize = {width: 8192, height: 8192}
-let pxTrans = { dx: -19115, dy: -45040, m: 11 }
+let pxTrans = { dx: -19065, dy: -45040, m: 11 }
 let siuBounds = [
     [pxTrans.dy, pxTrans.dx],
     [
