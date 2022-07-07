@@ -1,21 +1,23 @@
+let mapSize = {width: 2048, height: 2048}
+let pxTrans = {dx: -74515, dy: -85540, m: 21.3678}
+let siuBounds = [
+    [pxTrans.dy, pxTrans.dx],
+    [
+        pxTrans.dy + pxTrans.m * mapSize.height,
+        pxTrans.dx + pxTrans.m * mapSize.width
+    ]
+];
+
 export var SiuMap = L.Map.extend({
+    bounds: siuBounds,
     initialize: function() {
         L.Map.prototype.initialize.call(this, 'map', {
             crs: L.CRS.Simple,
-            minZoom: -8
+            minZoom: -8,
+            maxZoom: -2,
         });
         this.on('contextmenu', function() {/* Do nothing */});
-
-        let mapSize = {width: 2048, height: 2048}
-        let pxTrans = {dx: -73730, dy: -29880, m: 18}
-        let bounds = [
-            [pxTrans.dy, pxTrans.dx],
-            [
-                pxTrans.dy + pxTrans.m * mapSize.height,
-                pxTrans.dx + pxTrans.m * mapSize.width
-            ]
-        ];
-        L.imageOverlay('img/map.jpg', bounds).addTo(this);
-        this.fitBounds(bounds);
+        L.imageOverlay('img/map.jpg', this.bounds).addTo(this);
+        this.fitBounds(this.bounds);
     }
 });
