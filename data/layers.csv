@@ -1,10 +1,10 @@
 ﻿id,name,background,defaultActive
-closedChest,Chests,,x
-shop,Shop,,x
-collectable,Collectables,,x
+closedChest,Chests,,
+shop,Shop,,
+collectable,Collectables,,
 upgrades,Upgrades,,
 misc,Miscellaneous,,
-coin,Coins,,
+coin,Coins,,x
 pad,Jump Pads,img/pad_map.png,
 pipe,Pipes,img/pipe_map.png,
-coordinate,XY,,
+coordinate,XY,,x

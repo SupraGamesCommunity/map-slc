@@ -1,6 +1,7 @@
 ﻿id,width,height,x,y
 shop,32,32,,
 coin,25,25,,
+coinRed,25,25,,
 coinStash,32,32,,
 armor,32,32,,
 beam,32,32,,
