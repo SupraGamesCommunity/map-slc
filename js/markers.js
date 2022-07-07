@@ -64,7 +64,7 @@ export class Markers {
 
 
     static async _addCoordinateExtractionTool() {
-        L.marker([0, 0], {zIndexOffset: 10000, draggable: true})
+        L.marker([0, 26000], {zIndexOffset: 10000, draggable: true})
             .bindPopup('0, 0')
             .addTo(Layers.get('coordinate'))
             .on('moveend', function(e) {
