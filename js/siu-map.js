@@ -13,7 +13,7 @@ export var SiuMap = L.Map.extend({
     initialize: function() {
         L.Map.prototype.initialize.call(this, 'map', {
             crs: L.CRS.Simple,
-            minZoom: -8,
+            minZoom: -6,
             maxZoom: -2,
         });
         this.on('contextmenu', function() {/* Do nothing */});
