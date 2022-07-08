@@ -1,4 +1,4 @@
-# map-sl
-Map for Supraland
+# map-slc
+Map for Supraland Crash
 
-https://supragamescommunity.github.io/map-sl/
+https://supragamescommunity.github.io/map-slc/
